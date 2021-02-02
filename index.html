@@ -3,85 +3,262 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Assets/mango.svg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mango's Discord bot website.">
-    <meta name="keywords" content="Mazz3015,ma15fo43,scratch,Mango,Discord,discord-mango,bot discord,bot mango,mango">
-    <meta name="author" content="Mazz3015">
-    <meta name="theme-color" content="#2fb8f5">
-    <meta property="og:title" content="Mango's website" />
-    <meta property="og:url" content="https://ma15fo43.github.io" />
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/37367577?s=400&v=4" />
-    <meta property="og:description" content="Website for the Mango Discord bot." />
-    <meta property="og:site_name" content="Mango's website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mango</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mango - website">
+    <meta name="keywords"
+        content="Mazz3015,ignmazz,scratch,mazz,mazzml,mazz.ml,mazzfun,mazz.fun,mango,discord,discordbot,bot">
+    <meta name="author" content="Mazz">
+    <meta name="theme-color" content="#565656">
+    <meta property="og:title" content="mazz.fun" />
+    <meta property="og:url" content="https://mazzlabs.github.io" />
+    <meta property="og:image"
+        content="https://avatars2.githubusercontent.com/u/37367577?s=460&u=56b3f0d26c3f93c562a272bd14932bcc3d4e3990&v=4" />
+    <meta property="og:description" content="The best multitask Discord bot out there. Click to learn more." />
+    <meta property="og:site_name" content="Mango website" />
     <meta property="og:type" content="website" />
-    <title>Mango's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"
+        id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
+        rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet"
+        id="font-awesome-5-kit-css">
+    <script src="https://kit.fontawesome.com/7e66d43f44.js" crossorigin="anonymous"></script>
+    <script src="js/counter.js"></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Commands</a>
-        <a href="https://mazz.fun">Go to mazz.fun</a>
-    </div>
-    <div class="applyMargin">
-        <h1 class="animated bounce">About Mango 🥭</h1>
-        <h3 class="animated shake">Mango is a multi-lingual Discord bot developped by <code>@Mazz3015#0001</code>
-            written in TypeScript/JavaScript with the <a href="https://discordjs.org">discord.js library</a>.</h3>
-        <h3 class="animated zoomInUp">It has a <i class="fab fa-github" aria-hidden="true"></i> GitHub repository here -
-            <a href="https://github.com/Ma15fo43/Mango">github.com/Ma15fo43/Mango</a></h3>
-        <br>
-        <h1 class="animated rollIn">Questions and answers</h1>
-        <div class="centeredtext">
-            <div class="box">
-                <h2 class="animated bounceInLeft" class="box"><strong>Can I add the bot to my server?</strong></h2>
-                <h3 class="animated jello" class="box">Unfortunately, not for the moment.</h3>
-            </div>
-            <br>
-            <div class="box">
-                <h2 class="animated zoomInUp">Where can I see all the commands of the bot?</h2>
-                <h3 class="animated wobble">You can see the commands of the bot <a href="#commandes">here</a>.</h3>
-            </div>
-            <br>
-            <div class="box">
-                <h2 class="animated zoomInUp">Lorem ipsum?</h2>
-                <h3 class="animated wobble">Lorem ipsum.</h3>
-            </div>
-            <br>
-            <div class="box">
-                <h2 class="animated zoomInUp">Lorem ipsum?</h2>
-                <h3 class="animated wobble">Lorem ipsum.</h3>
+    <body onload="runAnimations()"></body>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <figure class="image center">
+                    <img src="assets/mango.png" style="max-width: 60px;">
+                </figure>
             </div>
         </div>
-        <br>
-        <h1>Statistics</h1>
-        <h3 id="mangoEmoji">Here are some stats about Mango... twemoji.parse("🥭")</h3>
-        <h3 id="usersNumber"><i class="fas fa-spinner"></i> Fetching user number data - please wait...</h3>
-        <h3 id="serversNumber"><i class="fas fa-spinner"></i> Fetching server number data - please wait...</h3>
-        <h3 id="channelsNumber"><i class="fas fa-spinner"></i> Fetching channel number data - please wait...</h3>
-        <h3 id="emojisNumber"><i class="fas fa-spinner"></i> Fetching emoji number data - please wait...</h3>
-        <br>
-        <h1>Socials</h1>
-        <h3><i class="fab fa-github" aria-hidden="true" style="color: black;"></i> GitHub: <a
-                href="https://github.com/Ma15fo43/Mango">Mango
-                repository</a> - feel free to star it! <i class="fa fa-star" style="color: yellow;"></i></h3>
-        <h3><i class="fab fa-twitter" style="color: #0084b4;"></i> Twitter: <a
-                href="https://twitter.com/Mazz3015">twitter.com/Mazz3015</a></h3>
-        <h3><i class="fab fa-youtube" style="color: red;"></i> YouTube: <a
-                href="https://www.youtube.com/channel/UC3juzayWb3AHs4Kt1YGd5Iw?view_as=subscriber">my YT channel</a>
-        </h3>
-        <h3><i class="fab fa-discord" style="color: dodgerblue;"></i> Discord: <code>Mazz#0270</code> - add me!</h3>
-    </div>
-    <script src="./JavaScript/statistics.js"></script>
-</body>
+    </section>
 
-</html>
+    <section class="section has-background-light">
+        <div class="container">
+            <h1 class="title is-size-2 center">Mango - the Discord bot you need.</h1><br>
+            <div class="columns">
+                <div class="column">
+                    <article class="media notification is-warning">
+                        <figure class="media-left">
+                            <span class="icon is-medium">
+                                <i class="fas fa-2x fa-shield-alt"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Moderation</h1>
+                                <p class="is-size-5">A powerful moderation system with all the commands you need. Mute temporarily a member and secure your server in a matter of seconds.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <article class="media notification is-info">
+                        <figure class="media-left">
+                            <span class="icon is-medium">
+                                <i class="fas fa-2x fa-info"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Information</h1>
+                                <p class="is-size-5">All the information commands you could ever imagine: user, server, and even more. Accessible by typing a command. Easy.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <article class="media notification is-primary">
+                        <figure class="media-left">
+                            <span class="icon is-medium">
+                                <i class="fas fa-2x fa-gamepad"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Games</h1>
+                                <p class="is-size-5">Play funny games such as hangman or tic-tac-toe directly from your chat with your friends. Brought to you by Mango 😉</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>    
+            </div>
+            
+            <div class="columns">
+                <div class="column">
+                    <article class="media notification is-danger">
+                        <figure class="media-left">
+                            <span class="icon is-medium">
+                                <i class="fas fa-2x fa-music"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Music</h1>
+                                <p class="is-size-5">Want to blast some music while chatting on Discord? Search your favorite song directly from YouTube and add it to the queue!</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <article class="media notification is-link">
+                        <figure class="media-left">
+                            <span class="icon is-medium">
+                                <i class="fas fa-2x fa-comments-dollar"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Economy</h1>
+                                <p class="is-size-5">The bot has a built-in economy system. Buy items from the market, sell objects, consult your money and inventory, and more.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <article class="media notification is-success">
+                        <figure class="media-left">
+                            <span class="icon is-medium">
+                                <i class="fas fa-2x fa-ellipsis-h"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">and many others</h1>
+                                <p class="is-size-5">Create your mug, participate in a giveaway, check the most active users in your guild with Mango, the all-in-one Discord bot.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="container center">
+                <a class="button is-black is-medium" href="https://mazz.xyz"><span class="icon"><i class="fab fa-discord"></i></span><span>Add to Discord!</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-one-third">   
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <span class="icon">
+                                <i class="fas fa-lg fa-bolt has-text-warning"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Fast</h1>
+                                <p class="subtitle is-size-5">
+                                    The bot answers to your commands <strong>really</strong> quickly
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-one-third">
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <span class="icon has-text-success">
+                                <i class="fas fa-lg fa-check"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Reliable</h1>
+                                <p class="subtitle is-size-5">
+                                    I try letting the bot <strong>online</strong> whenever I can, meaning it has a good uptime
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-one-third">
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <span class="icon has-text-danger">
+                                <i class="fas fa-lg fa-file-image"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Welcome</h1>
+                                <p class="subtitle is-size-5">
+                                    Welcome and goodbye messages displayed with <strong>images</strong>. How cool?!
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-one-third">
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <span class="icon has-text-grey">
+                                <i class="fas fa-lg fa-cogs"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Configuration</h1>
+                                <p class="subtitle is-size-5">
+                                    An <strong>easy-to-use</strong> configuration system, with customisation options
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-one-third">
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <span class="icon has-text-primary">
+                                <i class="fas fa-lg fa-user"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Developer</h1>
+                                <p class="subtitle is-size-5">
+                                   Mango is developped by <strong>one</strong> person for entertaining purposes
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-one-third">
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <span class="icon has-text-danger">
+                                <i class="fas fa-lg fa-terminal"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title is-size-4">Code</h1>
+                                <p class="subtitle is-size-5">
+                                    Mango's code is available on the <strong>internet</strong>: <a href="https://github.com/mazzlabs/mango">github repository</a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
